@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap);
+@import url(https://fonts.googleapis.com);
+@import url(https://fonts.gstatic.com);
+
+body{
+    font: {
+        family: Caveat !important;
+        size: 27px !important;
+    }
+    animation: fade-in-right 500ms forwards;
+
+    @keyframes fade-in-right {
+        0%{
+            transform: translateX(-10);
+            opacity: 0;
+        }
+
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
+
+header{
+    nav{
+        background-color: rgba(0, 255, 255, 0.65);
+
+        li{
+           a{
+            &:hover{
+                color: darkslategray !important;
+            }
+           }
+
+           #searchBar{
+            border: {
+                color: white !important;
+            }
+           }
+        }
+    }
+}
