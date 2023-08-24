@@ -20,9 +20,9 @@ body {
 header nav {
   background-color: rgba(0, 255, 255, 0.65);
 }
-header nav li #color {
+header nav li #color1 {
   color: darkslategrey;
 }
 header nav li .nav-link:hover {
-  color: darkslategrey;
+  color: darkslategray !important;
 }/*# sourceMappingURL=style.css.map */

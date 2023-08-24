@@ -22,19 +22,28 @@ body{
     }
 }
 
+/* Start header */
 header{
     nav{
-        background-color: rgba(0, 255, 255, 0.65);
+        background-color: $bkg-cl;
 
         li{
-            #color{
-                color: darkslategrey;
+            #color1{
+                color: $darkgrey;
             }
             .nav-link{
                 &:hover{
-                    color: darkslategrey;
+                    color: $darkgrey;
                 }
             }
         }
     }
 }
+/* End header */
+
+/* Start main */
+main{
+
+}
+
+/* End main */
