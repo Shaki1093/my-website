@@ -2,6 +2,13 @@
 @import url(https://fonts.googleapis.com);
 @import url(https://fonts.gstatic.com);
 
+//Variable
+$bkg-cl: rgba(0, 255, 255, 0.65);
+$darkgrey: rgb(20, 46, 46);
+$bkgfnt: rgba(22, 40, 34, 0.485);
+$fntcolor: rgb(199, 197, 197);
+
+//CSS
 body{
     font: {
         family: Caveat !important;
@@ -42,8 +49,47 @@ header{
 /* End header */
 
 /* Start main */
-main{
+.main{
+    position: relative;
+    //Images
+    .background{
+        position:absolute;
+        width: 100%;
+        height: 175%;
+        z-index: -1;
+        opacity: .85;
+    }
+    .me{
+        width: 20%;
+        height: 20%;
+        position: relative;
+        border-radius: 70px;
+        top:-20rem;
+        left: 75rem;
+    }
+    //main div
+    h1{
+        text-align: center;
+        background-color: $bkgfnt;
+        color: $fntcolor;
+    }
+    p{
+        background-color: $bkgfnt;
+        color: $fntcolor;
+        width: 75rem;
+    }
+}
+/* End main */
 
+//Start contact me
+.contact{
+    position: relative;
+    top: -15rem;
+    left: 30rem;
+    background-color: $bkgfnt;
+    color: $fntcolor;
+    width: 30rem;
 }
 
-/* End main */
+
+//End contact me

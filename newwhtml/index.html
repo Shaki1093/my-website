@@ -6,6 +6,7 @@
     <meta name="description" content="Welcome to my page here you can see my portfolio and how i set everything up">
     <title>Shaki Page</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/footer/footer.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <style>
     </style>
@@ -50,16 +51,17 @@
     <div class="main">
         <img src="images/pexels-pixabay-147411.jpg" alt="landscape" class="background">
         <h1>Welcome to my page</h1>
+        <br><br>
         <p>Hello My name is Joshua. I am 28 years old and currently I'm learning how to do front end. 
-            To briefly explain how this page was created.<br>First i took the time to do the header and the nav bar.
-             At first it wasnt easy since i had to work around on separating the search bar from <br>
+            To briefly explain how this page was created.First i took the time to do the header and the nav bar.
+             At first it wasnt easy since i had to work around on separating the search bar from
              the list but finally manage to make it work. The i added a search icon it does not have the function of a button but is representing one.
-             <br> After that on the main section i put the background image with the opacity.</p>
+              After that on the main section i put the background image with the opacity.</p>
         <br>
-        <p>One of the thing i like about me is that im goofy im always playing around and having fun with the smalles things. <br>
-            ive been working on amazon for almost 3 years by now and currently im a learning trainer. Now to close this, <br>
+        <p>One of the thing i like about me is that im goofy im always playing around and having fun with the smalles things. 
+            ive been working on amazon for almost 3 years by now and currently im a learning trainer. Now to close this, 
             lets talk about the last section of this web page. With the implementation of a sign in submition now,
-            <br> it will be easy for me to comunicate back with people around the world.
+             it will be easy for me to comunicate back with people around the world.
         </p>
          <p>Currently i do not have any social media will update in the future. Meanwhile please file the form for better comunication.</p>
         <img src="images/Joshua.jpg" alt="Josh" class="me">
@@ -68,7 +70,7 @@
     <div class="contact">
         <h2>To Contact me please submit this form!</h2>
         <br>
-        <form action="submit" method="get">
+        <form>
             <label for="email" class="label">Email: </label>
             <input type="email"  placeholder="example@gmail.com">
             <br> <br>
@@ -86,11 +88,48 @@
                 <input type="radio">Text</input>
                 <label>Text</label>
                 <br><br>
-                <input type="submit" value="submit" class="submit">
         </form>
+        <button class="btn-submit" id="submit">Submit</button>
     </div>
-    <footer>
+    <footer class="footer hidden-3">
+        <!-- Rating state start -->
+<div class="container hidden-1">
+  <img src="images/icon-star.svg">
+  <h1>How did we do?</h1>
 
+  <p>Please let us know how we did with your support request. All feedback is appreciated 
+    to help us improve our offering!</p>
+
+  <ul>
+    <li><button class="btn">1</button></li>
+    <li><button class="btn">2</button></li>
+    <li><button class="btn">3</button></li>
+    <li><button class="btn">4</button></li>
+    <li><button class="btn">5</button></li>
+  </ul>
+
+  <button class="btn-submit" id="submit-rating">Submit</button>
+</div>
+
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+<div class="thank-you hidden">
+  <img src="images/illustration-thank-you.svg">
+  <p class="orange">You selected <span id="rating" style="display: inline-block; margin: 0 0.3rem;">1</span> out of 5</p>
+
+  <h2>Thank you!</h2>
+
+  <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!</p>
+  
+    <button class="btn-submit" id="go-back">Go Back</button>  
+</div>
+
+
+  <!-- Thank you state end -->
+  <script src="js/script.js"></script>
     </footer>
   
 </body>

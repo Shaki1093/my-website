@@ -6,6 +6,16 @@ body {
   font-size: 27px !important;
 }
 
+header nav {
+  background-color: rgba(0, 255, 255, 0.65) !important;
+}
+header nav li #color1 {
+  color: rgb(20, 46, 46) !important;
+}
+header nav li .nav-link:hover {
+  color: rgb(20, 46, 46) !important;
+}
+
 .wrapper {
   display: grid;
   grid-template-areas: "header header header" "main main main" "main main main" "footer footer footer";
